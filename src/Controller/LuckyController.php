@@ -17,7 +17,7 @@ class LuckyController
     {
         $num = $this->getRandomNumber(0,100);
         return new Response(
-            '<html><body>Lucky number: '.$num.'</body></html>'
+            '<html><body>Lucky number: <div id=\'num\'>'.$num.'</div></body></html>'
         );
     }
 
